@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <Greeting
             name="Héctor"
-            numberOfMessages={100}
+            numberOfMessages={10}
         />
         <img src={logo} className="App-logo" alt="logo" />
         <p>

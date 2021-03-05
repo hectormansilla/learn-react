@@ -9,7 +9,10 @@ export const Greeting = ({ name, numberOfMessages }) => {
     return (
         <>
         {greetingHeader}
-        <p>You hace {numberOfMessages} new messages</p>
+        {numberOfMessages === 0
+        ? null
+        : <p>You hace {numberOfMessages} new messages</p>
+        }
         </>
     )
 }
