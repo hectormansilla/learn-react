@@ -11,7 +11,7 @@ export const Greeting = ({ name, numberOfMessages }) => {
         {greetingHeader}
         {numberOfMessages === 0
         ? null
-        : <p>You hace {numberOfMessages} new messages</p>
+        : <p>You have {numberOfMessages} new messages</p>
         }
         </>
     )

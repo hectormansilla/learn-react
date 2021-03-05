@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { CounterButton } from './CounterButton'
 import { Greeting } from './Greeting'
 import { PeopleList } from './PeopleList'
 import './App.css';
@@ -20,24 +21,11 @@ const people = [{
 function App() {
   let adjective = 'cool!';
   let url = 'https://reactjs.org';
+
   return (
     <div className="App">
       <header className="App-header">
-        <Greeting name="Héctor" numberOfMessages={10} />
-        <PeopleList people={people} />
-        <button onClick={() => alert('Hello!')}>Click Me!</button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is {adjective}
-        </p>
-        <a
-          className="App-link"
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CounterButton />
       </header>
     </div>
   );
