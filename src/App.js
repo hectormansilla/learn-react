@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greeting />
+        <Greeting
+            name="Héctor"
+            numberOfMessages={100}
+        />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           This is {adjective}
