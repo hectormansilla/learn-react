@@ -25,6 +25,7 @@ function App() {
       <header className="App-header">
         <Greeting name="Héctor" numberOfMessages={10} />
         <PeopleList people={people} />
+        <button onClick={() => alert('Hello!')}>Click Me!</button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           This is {adjective}
