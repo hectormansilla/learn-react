@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { CounterButton } from './CounterButton'
 import { Greeting } from './Greeting'
 import { PeopleList } from './PeopleList'
@@ -21,12 +21,18 @@ const people = [{
 
 function App() {
   const [numberOfClicks, setNumberOfClicks] = useState(0);
-  const increment = () => setNumberOfClicks(numberOfClicks +1);
+  const increment = () => setNumberOfClicks(numberOfClicks + 1);
+
+  const [hideMessage, setHidemessage] = useState(false);
+
 
   return (
     <div className="App">
       <header className="App-header">
-        <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={10} />
+        {hideMessage
+          ? null
+          : <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={10} onHide={() => setHidemessage(true)} />
+        }
         <CounterButton onIncrement={increment} numberOfClicks={numberOfClicks} />
       </header>
     </div>
