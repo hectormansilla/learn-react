@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import { CounterButton } from './CounterButton'
 import { Greeting } from './Greeting'
 import { PeopleList } from './PeopleList'
+import { CongratulationsMessage } from './CongratulationsMessage'
 import './App.css';
 
 const people = [{
@@ -19,13 +20,14 @@ const people = [{
 }]
 
 function App() {
-  let adjective = 'cool!';
-  let url = 'https://reactjs.org';
+  const [numberOfClicks, setNumberOfClicks] = useState(0);
+  const increment = () => setNumberOfClicks(numberOfClicks +1);
 
   return (
     <div className="App">
       <header className="App-header">
-        <CounterButton />
+        <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={10} />
+        <CounterButton onIncrement={increment} numberOfClicks={numberOfClicks} />
       </header>
     </div>
   );
