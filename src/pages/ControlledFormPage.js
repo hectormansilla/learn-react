@@ -12,18 +12,21 @@ export const ControlledFormPage = () => {
                 <input 
                   type='text' 
                   placeholder='Name' 
+                  value={name}
                   onChange={ev => setName(ev.target.value)} />
             </div>
             <div>
                 <input 
                   type='text' 
-                  placeholder='Email' 
+                  placeholder='Email'
+                  value={email}
                   onChange={ev => setEmail(ev.target.value)} />
             </div>
             <div>
                 <input 
                   type='text' 
                   placeholder='Favorite Color' 
+                  value={favoriteColor}
                   onChange={ev => setFavoriteColor(ev.target.value)} />
             </div>
             <button onClick={ev => {
