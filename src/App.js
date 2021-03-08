@@ -8,6 +8,7 @@ import {
   ProtectedPage,
   ControlledFormPage,
   UncontrolledFormPage,
+  UserProfilePage,
 } from './pages';
 import { NavBar } from './NavBar';
 import { FormsNavBar } from './FormsNavBar'
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path='/protected'>
               <ProtectedPage />
+            </Route>
+            <Route path='/users'>
+              <UserProfilePage />
             </Route>
             <Route path='/forms'>
               <FormsNavBar />

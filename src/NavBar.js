@@ -10,6 +10,9 @@ export const NavBar = () =>(
             <Link to='/people-list'>People List</Link>
         </li>
         <li>
+            <Link to='/users'>Users</Link>
+        </li>
+        <li>
             <Link to='/forms'>Forms</Link>
         </li>
 
