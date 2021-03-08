@@ -34,7 +34,8 @@ export const ControlledFormPage = () => {
                     Your name is ${name},
                     Your e-mail is ${email},
                     Your favorite color is ${favoriteColor}!
-                `)
+                `);
+                ev.preventDefault();
                 }
             }
             >Submit</button>
