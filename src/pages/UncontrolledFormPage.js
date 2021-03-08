@@ -1,6 +1,6 @@
-import React, from 'react';
+import React from 'react';
 
-export const ControlledFormPage = () => {
+export const UncontrolledFormPage = () => {
     const nameInput = React.createRef();
     const emailInput = React.createRef();
     const favoriteColorInput = React.createRef();

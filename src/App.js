@@ -5,7 +5,9 @@ import { HomePage,
   PeopleListPage, 
   NotFoundPage, 
   ProtectedPage, 
-  ControlledFormPage } from './pages';
+  ControlledFormPage,
+  UncontrolledFormPage,
+ } from './pages';
 import './App.css';
 
 
@@ -19,6 +21,7 @@ function App() {
         <Link to='/counter'>Go to Counter Page</Link>
         <Link to='/people-list'>Go to People List Page</Link>
         <Link to='/protected'>Go to Protected Page</Link>
+        <Link to='/uncontrolled'>Go to Protected Page</Link>
         <Link to='/controlled'>Go to Protected Page</Link>
         <Link to='/people-list2'>Go to 404 Page</Link>
         <Switch>
@@ -36,6 +39,9 @@ function App() {
           </Route>
           <Route path='/controlled'>
             <ControlledFormPage />
+          </Route>
+          <Route path='/uncontrolled'>
+            <UncontrolledFormPage />
           </Route>
           <Route>
             <NotFoundPage />
